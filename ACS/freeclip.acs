@@ -1,0 +1,16 @@
+#library "freeclip"
+#include "zcommon.acs"
+
+script "freeclip" ENTER
+{
+
+	Delay(15);
+
+	if (CheckInventory("Uzi") && CheckInventory("Clip") < 3)
+		//TakeInventory("Clip", 3);
+		GiveInventory("Clip", 3);
+
+	Delay(15);
+	restart ;
+
+}

@@ -1,0 +1,72 @@
+ACTOR Uzi : Weapon 5757
+//THE FUCKIN FLASH DON' WORK!!!
+//EJECT SOUND ISNT WORKING
+{
+  Weapon.SelectionOrder 200
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 60
+  Weapon.AmmoType "Clip"
+  AttackSound "weapons/pistol"
+  Weapon.UpSound "Weapon/COLTUP"
+  Weapon.SlotNumber 2
+  Obituary "%o was Killed by %k's Uzi, damn..."
+  Inventory.Pickupmessage "Grabbed a stolen Uzi..."
+  decal BulletChip
+  +WEAPON.ALT_AMMO_OPTIONAL
+  +FLOATBOB
+  States
+  {
+  Ready:
+    UZIR AB 6 A_WeaponReady
+    Loop
+  Deselect:
+    UZIR A 1 A_Lower
+	Loop
+  Select:
+    UZIR A 1 A_Raise
+	Loop
+  Fire:
+	UZIR B 1
+	TNT1 A 0 A_GunFlash
+	TNT1 A 0 A_SetPitch(pitch-.6)
+	UZIF ABC 2 Bright A_FireBullets(4,4,1,9,"BulletPuff",0,640) //FBF_USEAMMO
+	TNT1 A 0 A_SetPitch(pitch+.6)
+	TNT1 A 0 A_Recoil(0.04)
+	TNT1 A 0 A_StartSound("weapons/eject") 
+	UZIL A 1 A_ReFire
+	TNT1 A 0 A_JumpIfInventory("Axing", 1, "Deselect")
+	UZIL B 1 A_StartSound("UZILOAD")
+	UZIL C 4 
+	UZIL E 6
+	UZIL B 2
+	UZIL A 3 
+    Goto Ready
+  AltFire:
+	TNT1 A 0 A_JumpIf(CountInv("Clip")<1,"Ready")
+	TNT1 A 0 A_TakeInventory("Clip",1)
+	UZIR A 1 A_SetPitch(pitch-.4)
+	UZIF C 2 BRIGHT A_FireBullets (3,3,1,11,"BulletPuff")
+	UZIR B 1  A_SetPitch(pitch+.3)
+	UZIR B 1 A_ReFire
+	UZIR A 1
+    Goto Ready
+	
+ NoAmmoFire:
+	TNT1 A 0 A_JumpIf(CountInv("Clip")<1,"Ready")
+	TNT1 A 0 A_TakeInventory("Clip",1)
+	UZIR A 1 A_SetPitch(pitch-.4)
+	UZIF C 2 BRIGHT A_FireBullets (3,3,1,9,"BulletPuff")
+	UZIR B 1  A_SetPitch(pitch+.3)
+	UZIR B 1 A_ReFire
+	UZIR A 1
+    Goto Fire
+  Flash:
+    UZIF A 2 Bright A_Light0
+	Goto LightDone
+    UZIF C 2 Bright A_Light1
+    Goto LightDone
+  Spawn:
+    MGUN A -1
+    Stop
+  }
+}

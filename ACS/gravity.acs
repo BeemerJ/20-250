@@ -1,0 +1,8 @@
+#library "gravity"
+#include "zcommon.acs"
+
+
+script "gravity" OPEN
+{
+	SetGravity(1000.0);
+}

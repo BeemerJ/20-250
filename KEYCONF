@@ -1,0 +1,7 @@
+//KeyConf
+
+addkeysection "20-500 Controls" 20-500Controls
+
+  addmenukey "Quick Attack" qaxe
+	alias qaxe "pukename qaxe"
+	defaultbind Q qaxe

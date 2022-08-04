@@ -1,0 +1,13 @@
+[enu default]
+
+TXT_GAME_NAME = "Motherland : 20-500";
+
+SKILL_BABY = "Very Easy";
+SKILL_EASY = "Easy";
+SKILL_NORMAL = "Normal";
+SKILL_HARD = "Hard";
+SKILL_NIGHTMARE = "Very Hard";
+
+TXT_MAP01 = "Level 1: The Escape";
+
+TXT_HUD_HEALTH = "Health: ";

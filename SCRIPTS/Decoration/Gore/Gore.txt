@@ -1,0 +1,196 @@
+ACTOR BonePile 10410
+{
+  Radius 24
+  Height 24
+  +SOLID
+  States
+  {
+  Spawn:
+    SBON A -1
+    Stop
+  }
+}
+
+ACTOR Bone1 10411
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    BONE A -1
+    Stop
+  }
+}
+
+ACTOR Bone2 10412
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    BONE B -1
+    Stop
+  }
+}
+
+ACTOR BrainMush 10413
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    MUSH A -1
+    Stop
+  }
+}
+
+ACTOR GoreChunk1 10414
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    CHNK A -1
+    Stop
+  }
+}
+
+ACTOR GoreChunk2 10415
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    CHNK B -1
+    Stop
+  }
+}
+
+ACTOR GoreChunk3 10416
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    CHNK C -1
+    Stop
+  }
+}
+
+ACTOR EyeBall 10417
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    EYEB A -1
+    Stop
+  }
+}
+
+ACTOR Organ1 10418
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    ORGN A -1
+    Stop
+  }
+}
+
+ACTOR Organ2 10419
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    ORGN B -1
+    Stop
+  }
+}
+
+ACTOR RibCage 10420
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    RIBC A -1
+    Stop
+  }
+}
+
+ACTOR SpinalCord 10421
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    SPIN A -1
+    Stop
+  }
+}
+
+ACTOR Organs 10422
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    ORGS A -1
+    Stop
+  }
+}
+
+ACTOR Torso 10423
+{
+  Game Doom
+  Radius 16
+  Height 56
+  -SOLID
+  States
+  {
+  Spawn:
+    TRSO A -1
+    Stop
+  }
+}
+
+//10425

@@ -1,0 +1,51 @@
+//weapons
+
+Weapon/COLTFIRE COLTFIRE
+UZILOAD UZILOAD
+UZIFS UZIFS
+uzi/fire 
+
+weapons/axecut SPLICE
+weapons/axebang CLANG
+weapons/axeswing SWISH
+silent DSEMPTY //only in new Zdooms
+
+//misc
+
+weapons/eject EJECT
+weapons/LowAmmo LOWAMMO
+
+//switches
+
+
+
+//enemies
+$random spider/sight {spider/sight1 spider/sight2}
+spider/sight1 SPISIT
+spider/sight2 SPISIT
+
+
+spider/death SPIDTH
+spider/pain SPIPAI
+spider/active SPIACT
+
+
+$random spider/step {spider/step1 spider/step2}
+spider/step1 SPIST1
+spider/step2 SPIST2
+
+//doors
+
+
+
+//player
+
+$playersound	player	male	*climb		dsoof
+$playersound	player	female	*climb		dsfoof
+$playersound	player	other	*climb		dscoof
+
+//UI
+
+menu/activate	NO
+menu/backup		SFX1
+menu/choose		NO

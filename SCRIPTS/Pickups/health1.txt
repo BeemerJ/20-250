@@ -1,0 +1,14 @@
+ACTOR Health1 : Health replaces HealthBonus
+{
+  +COUNTITEM
+  +INVENTORY.ALWAYSPICKUP
+  Inventory.Amount 5
+  Inventory.MaxAmount 250
+  Inventory.PickupMessage "$GOTHTHBONUS" // "Picked up a health bonus."
+  States
+  {
+  Spawn:
+    BON1 ABCDCB 6
+    Loop
+  }
+}

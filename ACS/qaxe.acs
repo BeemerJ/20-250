@@ -1,0 +1,22 @@
+// ACS
+#library "qaxe"
+#include "zcommon.acs"
+
+// Scripts
+Script "qaxe" (void)
+{
+	str weapon = GetWeapon();
+	if (StrICmp(weapon, "Axe"))
+	{
+		SetPlayerProperty(0, 1, PROP_INSTANTWEAPONSWITCH);
+		GiveInventory("Axe", 1);
+		GiveInventory("Axing", 1);
+		SetWeapon("Axe");
+		While (CheckInventory("Axing"))
+			Delay(1);
+		SetWeapon(weapon);
+		TakeInventory("Axe", 1);
+		Delay(3);
+		SetPlayerProperty(0, 0, PROP_INSTANTWEAPONSWITCH);
+	}
+}

@@ -1,0 +1,13 @@
+version "3.3.2"
+
+#include "scripts/Player/Player.zc"
+//#include "scripts/HUD/HUD.zc"
+#include "scripts/NQParticle/NQParticle.zc"
+#include "scripts/NQParticle/NQBulletPuff.zc"
+#include "scripts/NQParticle/NQBlood.zc"
+#include "scripts/Climbing/climbing_player.zc"
+
+//weapons
+
+//--
+

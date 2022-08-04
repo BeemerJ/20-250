@@ -1,0 +1,4 @@
+startuptitle = "Motherland : 20-500"
+startuptype = "Hexen"
+IWAD = doom2
+LOADLIGHTS = 0

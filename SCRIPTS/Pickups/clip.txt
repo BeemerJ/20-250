@@ -1,0 +1,18 @@
+ACTOR NewClip : Clip replaces Clip
+{
+  Inventory.PickupMessage "+10 Bullets"//"$GOTCLIP"
+  Radius 128
+  Inventory.Amount 10
+  Inventory.MaxAmount 600
+  Ammo.BackpackAmount 10
+  Ammo.BackpackMaxAmount 400
+  Inventory.Icon "CLIPA0"
+  +FLOATBOB
+  +NOGRAVITY
+  States
+  {
+  Spawn:
+    CLIP A -1 Bright 
+    Stop
+  }
+}

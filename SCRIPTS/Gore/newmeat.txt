@@ -1,0 +1,4 @@
+Actor NewMeat : Meat replaces Meat
+{
+  -NOCLIP
+}

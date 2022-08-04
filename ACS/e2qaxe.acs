@@ -1,0 +1,21 @@
+//ACS
+#library "qaxe"
+#library "e2qaxe"
+#include "zcommon.acs"
+#import "qaxe.acs"
+
+//SCRIPT
+
+script "e2qaxe" OPEN
+{
+Delay(35*1);
+
+int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
+
+//if (buttons & BT_FORWARD)
+	{
+    print(s:"this script works");
+	ACS_Execute(666,1);
+	Restart;
+	}
+}

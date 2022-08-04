@@ -1,0 +1,31 @@
+//weapons
+
+//#include "scripts/Weapons/2/pistol.txt"
+#include "scripts/Weapons/3/uzi.txt"
+#include "scripts/Weapons/0/qaxe.txt"
+
+//---
+
+//effects
+
+#include "scripts/Gore/vblood.txt"
+#include "scripts/Gore/newmeat.txt"
+
+//---
+
+//pickups
+
+#include "scripts/Pickups/health1.txt"
+#include "scripts/Pickups/clip.txt"
+
+//enemies
+
+#include "scripts/Enemies/spider/spider.txt"
+
+//Decoration
+
+#include "scripts/Decoration/Gore/Gore.txt"
+
+//Misc
+
+#include "scripts/Misc/pushme.txt"

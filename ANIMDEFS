@@ -1,0 +1,24 @@
+//WARPS
+
+WARP flat liq1
+WARP flat liq2
+WARP flat liq3
+WARP flat liq4
+WARP flat OFLSHH02
+WARP flat OFLSHA01
+WARP flat P_BUBBL1
+WARP flat P_BUBBL2
+
+//SWITCHES
+
+switch btn1 on pic btn2 tics 0
+switch P_PIPSW1 on pic P_PIPSW2 tics 0
+switch P_INKSW2 on pic P_INKSW1 tics 0
+switch P_WHEEL1 on pic P_WHEEL2 tics 0
+switch P_LEVER3 on pic P_LEVER4 tics 0
+switch P_ATM1 on pic P_ATM2 tics 0
+switch OSWTCHL0 on pic OSWTCHL1 tics 0
+switch OSWTCHG0 on pic OSWTCHG1 tics 0
+switch OSWTCHB1 on pic OSWTCHB0 tics 0
+
+//DOORS

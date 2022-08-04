@@ -1,0 +1,19 @@
+Actor pushme1 10424
+{
+  Game Doom
+  -SOLID
+  +NOCLIP
+  +WALLSPRITE
+  +BRIGHT
+  +FLOATBOB
+  +NOGRAVITY
+  +FORCEYBILLBOARD
+  +VISIBILITYPULSE
+  
+  States
+  {
+  Spawn:
+    PUSH A -1
+    Stop
+  }
+}
