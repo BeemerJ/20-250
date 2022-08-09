@@ -6,7 +6,7 @@ Actor Spider : DoomImp replaces DoomImp
   PainChance 255
   Mass 198
   Species "Spider"
-  Friction 1.2
+  Friction 10.0
   Speed 16
   SeeSound "spider/sight"
   DeathSound "spider/death"
